@@ -3,29 +3,29 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
-        // Задание 1
+        // Р—Р°РґР°РЅРёРµ 1
         short clientOS = 0; //0 - iOS, 1 - Android
         if (clientOS == 0){
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else System.out.println("Установите версию приложения для Android по ссылке");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ iOS РїРѕ СЃСЃС‹Р»РєРµ");
+        } else System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ Android РїРѕ СЃСЃС‹Р»РєРµ");
 
-        // Задание 2
+        // Р—Р°РґР°РЅРёРµ 2
         short clientDeviceYear = 2014;
         if (clientDeviceYear >= 2015){
             if (clientOS == 0){
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }  else System.out.println("Установите версию приложения для Android по ссылке");
+                System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ iOS РїРѕ СЃСЃС‹Р»РєРµ");
+            }  else System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ Android РїРѕ СЃСЃС‹Р»РєРµ");
         } else if (clientOS == 0){
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }  else System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РѕР±Р»РµРіС‡РµРЅРЅСѓСЋ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ iOS РїРѕ СЃСЃС‹Р»РєРµ");
+        }  else System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РѕР±Р»РµРіС‡РµРЅРЅСѓСЋ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ Android РїРѕ СЃСЃС‹Р»РєРµ");
 
-        // Задание 3
+        // Р—Р°РґР°РЅРёРµ 3
         short year = 1988;
         if ((year % 4 != 0) || (year % 100 == 0 && year % 400 != 0)){
-            System.out.println(year + " год не является високосным");
-        } else System.out.println(year + " год является високосным");
+            System.out.println(year + " РіРѕРґ РЅРµ СЏРІР»СЏРµС‚СЃСЏ РІРёСЃРѕРєРѕСЃРЅС‹Рј");
+        } else System.out.println(year + " РіРѕРґ СЏРІР»СЏРµС‚СЃСЏ РІРёСЃРѕРєРѕСЃРЅС‹Рј");
 
-        // Задание 4
+        // Р—Р°РґР°РЅРёРµ 4
         short deliveryDistance = 95;
         int countDay = 1;
         if (deliveryDistance <= 60){
@@ -36,51 +36,84 @@ public class Main {
             countDay = countDay + 2;
         }
         if (deliveryDistance <= 100){
-            System.out.println("Потребуется дней: " + countDay);
-        } else System.out.println("Введено некорректное значение. Доставка карт поддерживается на расстояние до 100 км.");
+            System.out.println("РџРѕС‚СЂРµР±СѓРµС‚СЃСЏ РґРЅРµР№: " + countDay);
+        } else System.out.println("Р’РІРµРґРµРЅРѕ РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ. Р”РѕСЃС‚Р°РІРєР° РєР°СЂС‚ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РЅР° СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґРѕ 100 РєРј.");
 
-        // Задание 5
+        // Р—Р°РґР°РЅРёРµ 5
         short monthNumber = 12;
         String monthName;
         switch (monthNumber){
             case 1:
-                monthName = "Январь";
+                monthName = "РЇРЅРІР°СЂСЊ";
                 break;
             case 2:
-                monthName = "Февраль";
+                monthName = "Р¤РµРІСЂР°Р»СЊ";
                 break;
             case 3:
-                monthName = "Март";
+                monthName = "РњР°СЂС‚";
                 break;
             case 4:
-                monthName = "Апрель";
+                monthName = "РђРїСЂРµР»СЊ";
                 break;
             case 5:
-                monthName = "Май";
+                monthName = "РњР°Р№";
                 break;
             case 6:
-                monthName = "Июнь";
+                monthName = "РСЋРЅСЊ";
                 break;
             case 7:
-                monthName = "Июль";
+                monthName = "РСЋР»СЊ";
                 break;
             case 8:
-                monthName = "Август";
+                monthName = "РђРІРіСѓСЃС‚";
                 break;
             case 9:
-                monthName = "Сентябрь";
+                monthName = "РЎРµРЅС‚СЏР±СЂСЊ";
                 break;
             case 10:
-                monthName = "Октябрь";
+                monthName = "РћРєС‚СЏР±СЂСЊ";
                 break;
             case 11:
-                monthName = "Ноябрь";
+                monthName = "РќРѕСЏР±СЂСЊ";
                 break;
             case 12:
-                monthName = "Декабрь";
+                monthName = "Р”РµРєР°Р±СЂСЊ";
                 break;
-            default: monthName = "Такого месяца нет";
+            default: monthName = "РўР°РєРѕРіРѕ РјРµСЃСЏС†Р° РЅРµС‚";
         }
-        System.out.println("Определен месяц: " + monthName);
+        System.out.println("РћРїСЂРµРґРµР»РµРЅ РјРµСЃСЏС†: " + monthName);
+
+        // Р—Р°РґР°РЅРёРµ 6
+        int age = 19;
+        int salary = 58_000;
+        double limit;
+
+        if (age >= 23){
+            limit = salary * 3;
+        } else limit = salary * 2;
+        if (salary >= 80_000){
+            limit = limit * 1.5;
+        } else if (salary >= 50_000) limit = limit * 1.2;
+        System.out.println("РњС‹ РіРѕС‚РѕРІС‹ РІС‹РґР°С‚СЊ РІР°Рј РєСЂРµРґРёС‚РЅСѓСЋ РєР°СЂС‚Сѓ СЃ Р»РёРјРёС‚РѕРј " + limit + " СЂСѓР±Р»РµР№");
+
+        // Р—Р°РґР°РЅРёРµ 7
+        int ageClient = 25;         // РІРѕР·СЂР°СЃС‚ РєР»РёРµРЅС‚Р°
+        int salaryClient = 60_000;  // Р—Рџ РєР»РёРµРЅС‚Р°
+        int wantedSum = 330_000;    // Р¶РµР»Р°РµРјР°СЏ СЃСѓРјРјР° РєСЂРµРґРёС‚Р°
+        double rate = 10;           // Р±Р°Р·РѕРІР°СЏ СЃС‚Р°РІРєР°
+        double payMonth;            // РїР»Р°РЅРёСЂСѓРµРјС‹Р№ РµР¶РµРјРµСЃСЏС‡РЅС‹Р№ РїР»Р°С‚РµР¶
+
+        if (salaryClient > 80_000){
+           rate = rate - 0.7;
+        }
+        if (ageClient < 30 && ageClient >= 23){
+            rate = rate + 0.5;
+        } else if (ageClient < 23) rate = rate + 1;
+
+        payMonth = wantedSum * ( ( ((rate/12)/100) * Math.pow((1+((rate/12)/100)),12))/(Math.pow((1+((rate/12)/100)),12) - 1) );
+        if (payMonth <= (salaryClient/2)){
+            System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РїР»Р°С‚РµР¶ РїСЂРё Р—Рџ " + salaryClient + " СЂР°РІРµРЅ " + (salaryClient/2) + " СЂСѓР±Р»РµР№. РџР»Р°С‚РµР¶ РїРѕ РєСЂРµРґРёС‚Сѓ " + Math.round(payMonth) + " СЂСѓР±Р»РµР№. РћРґРѕР±СЂРµРЅРѕ.");
+        } else System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РїР»Р°С‚РµР¶ РїСЂРё Р—Рџ " + salaryClient + " СЂР°РІРµРЅ " + (salaryClient/2) + " СЂСѓР±Р»РµР№. РџР»Р°С‚РµР¶ РїРѕ РєСЂРµРґРёС‚Сѓ " + Math.round(payMonth) + " СЂСѓР±Р»РµР№. РћС‚РєР°Р·Р°РЅРѕ.");
+
     }
 }
